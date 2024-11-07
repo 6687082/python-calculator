@@ -27,7 +27,8 @@ class Calculator:
     def divide(self, a, b):
         result = 0
         if(b == 0):
-            return ValueError
+            return print("Cannot divide with 0", ValueError)
+            
         if b < 0:
             b,a = -b,-a
         while a >= b:
@@ -51,5 +52,5 @@ if __name__ == "__main__":
     print("Example: addition: ", calc.add(20, 2))
     print("Example: subtraction: ", calc.subtract(10, 10))
     print("Example: multiplication: ", calc.multiply(-2,-6))
-    print("Example: division: ", calc.divide(10,-2))
+    print("Example: division: ", calc.divide(-10,0))
     print("Example: modulo: ", calc.modulo(10,3))
