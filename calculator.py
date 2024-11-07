@@ -26,6 +26,8 @@ class Calculator:
 
     def divide(self, a, b):
         result = 0
+        if(b == 0):
+            return ValueError
         while a >= b:
             a = self.subtract(a, b)
             result += 1
